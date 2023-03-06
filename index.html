@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@1.*/css/pico.min.css">
+
+  <title>IP-Checker</title>
+</head>
+
+<body>
+
+  <main class="container">
+    <form id="form">
+      <label for="">
+        IP to check
+        <input id="input" required type="text" placeholder="54.85.132.205">
+      </label>
+      <button type="submit" id="submit">Search</button>
+    </form>
+
+    <!-- Results will be completed here -->
+    <div>
+      <pre id="results"></pre>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
