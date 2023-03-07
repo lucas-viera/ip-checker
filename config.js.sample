@@ -1,0 +1,5 @@
+const API_KEY = () => {
+  return "YOR-API-KEY-HERE";
+};
+
+export { API_KEY };

@@ -1,7 +1,9 @@
+import { API_KEY } from "./config.js";
+
 const options = {
   method: "GET",
   headers: {
-    "X-RapidAPI-Key": "your-api-key-here",
+    "X-RapidAPI-Key": API_KEY(),
     "X-RapidAPI-Host": "ip-geo-location.p.rapidapi.com",
   },
 };
@@ -32,7 +34,6 @@ form.addEventListener("submit", async (event) => {
   const ipInfo = await fetchIpInformation(value);
   console.log(ipInfo);
   if (ipInfo) {
-    console.log("hola");
     results.innerHTML = JSON.stringify(ipInfo, null, 2);
   }
   submit.removeAttribute("disabled");
